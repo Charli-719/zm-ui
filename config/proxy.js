@@ -6,6 +6,7 @@
  * For details, please see
  * https://pro.ant.design/docs/deploy
  */
+
 export default {
   localhost: {
     '/admin/': {
