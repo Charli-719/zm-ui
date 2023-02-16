@@ -1,0 +1,19 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+//表格title上的竖线不显示
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+  width: 0 !important;
+}
+
+.ant-btn{
+  border-radius: 4px;
+}

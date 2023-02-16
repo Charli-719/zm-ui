@@ -1,0 +1,26 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# ignore cached files
+*.iml
+*.patch
+*.xml
+# ignore system files
+.DS_Store
+.idea/
+.
+
+# ignore imported modules
+node_modules
+dist
+
+# ignore package Files
+package-lock.json
+*.json.gz
+yarn.lock
+
+# ignore xml Files
+baseRefactoring.xml
+debugger.xml
+editor.xml
+colors.scheme.xml
+find.xml

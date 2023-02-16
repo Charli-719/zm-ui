@@ -1,0 +1,46 @@
+/**学员信息组件样式*/
+.category-page, .student-page{
+  .category-content, .student-content{
+    margin: 24px;
+    padding: 24px;
+    background: #fff;
+    .search-content{
+      display: flex;
+      .search-item{
+        //输入框和选择框的宽度固定
+        >.ant-input, >.ant-select, >.ant-input-affix-wrapper{
+          width: 240px;
+          margin-right: 24px;
+        }
+      }
+    }
+    //科目信息中的按钮组
+    .btn-groups{
+      .del-btn{
+        margin-left: 12px;
+      }
+    }
+    //新建按钮样式
+    .create-btn{
+      margin: 24px 0;
+    }
+    .category-table, .student-table{
+      .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+        text-align: center;
+      }
+      .operate{
+        .edit{
+          margin-right: 12px;
+        }
+      }
+    }
+    .category-pagination, .student-pagination{
+      text-align: right;
+      margin: 24px auto;
+      .ant-pagination-total-text{
+        float: left;
+        color: #888;
+      }
+    }
+  }
+}

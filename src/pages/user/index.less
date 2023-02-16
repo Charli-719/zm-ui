@@ -1,0 +1,124 @@
+//我的页面
+.user-center{
+  height: 100%;
+  .user-sider{
+    //position: fixed;
+    //left: 0;
+    //top: 48px;
+    width: 208px !important;
+    min-width: 208px !important;
+    max-width: 208px !important;
+    height: 100%;
+    box-shadow: 8px -5px 25px -15px #aaa;
+    border-radius: 2px;
+    .ant-layout-sider-children{
+      border-radius: 2px;
+    }
+    .user-sider-menu{
+      border: none;
+      margin-top: 21px;
+      .ant-menu-sub.ant-menu-inline{
+        background: #fff;
+        color: #969799;
+      }
+      .ant-menu-item-active,.ant-menu-item-selected{
+        background: #EEF9FB;
+        //color: #43C9D2;
+      }
+      .ant-menu-item{
+        width: 100%;
+      }
+      .ant-menu-inline .ant-menu-item::after{
+        border-width: 5px;
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+  .user-content{
+    //width: e("calc(100% - 208px)");
+    //height: 100%;
+    overflow-y: scroll;
+    margin: 16px 24px 24px 24px;
+    background: #fff;
+  }
+}
+
+
+//登录页面样式
+.login-page{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #c7c6c6;
+  .login-top{
+    width: 100%;
+    background: #747272;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+  }
+  .login-content{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .website-url{
+      width: 60%;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+    }
+    .login-container{
+      width: 40%;
+      background: #fff;
+      padding: 48px;
+      .login-title{
+        //color: #fff;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .login-form{
+        .ant-input,.ant-input-password{
+          //border-color: #292F3B;
+          //background: #292F3B;
+          border-radius: 6px;
+          color: #A0A6B2;
+        }
+        .verify-code-wrapper{
+          display: flex;
+          .verify-code-input{
+            width: 70%;
+          }
+          .verify-code{
+            width: 30%;
+            background: #eee;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+
+        .tips{
+          text-align: right;
+          font-size: 13px;
+          margin-bottom: 50px;
+          color: #A0A6B2;
+        }
+        .ant-btn{
+          width: 100%;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}
